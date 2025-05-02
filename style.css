@@ -361,3 +361,18 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 0px 30px;
+  }
+ #heroCarousel{
+  padding: 0px 30px;
+ }
+ .grid-container{
+  padding: 0px 30px;
+ }
+ .container{
+  padding: 0px 30px;
+ }
+}
