@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top ">
+    <div class="container">
+      <a class="navbar-brand px-5" href="#">
+        <img src="./images/Logo.svg" alt="Logo" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav d-flex gap-3 px-5">
+          <li class="nav-item" id="study-li"><a class="nav-link" href="#study">Study</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admmission">Admmission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pages">Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <button class="apply-now-button">Apply</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- //////////////////////////////////////////////////////////////////////// -->
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" id="study">
+    <div class="carousel-inner">
+  
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="container-fluid hero-img1 mt-5 px-0">
+          <div class="row align-items-center gx-0">
+            <div class="col-lg-5 col-md-6 col-sm-12 mb-3 text-start ps-0">
+              <img src="./images/Homebg1.png" alt="Hero Left" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 text-start">
+              <h2 class="hero-title">Innovation for education and Society</h2>
+              <p class="hero-description">
+                Our interdisciplinary majors and minors mean you can chart your own course for academic success
+              </p>
+              <button class="btn btn-primary">Visit our Campus</button>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 mb-3 text-end pe-0 mt-5">
+              <img src="./images/homebg.png" alt="Hero Right" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <!-- same content -->
+        <div class="container-fluid hero-img1 mt-5 px-0">
+          <div class="row align-items-center gx-0">
+            <div class="col-lg-5 col-md-6 col-sm-12 mb-3 text-start ps-0">
+              <img src="./images/Homebg1.png" alt="Hero Left" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 text-start">
+              <h2 class="hero-title">Innovation for education and Society</h2>
+              <p class="hero-description">
+                Our interdisciplinary majors and minors mean you can chart your own course for academic success
+              </p>
+              <button class="btn btn-primary">Visit our Campus</button>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 mb-3 text-end pe-0 mt-5">
+              <img src="./images/homebg.png" alt="Hero Right" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <!-- same content -->
+        <div class="container-fluid hero-img1 mt-5 px-0">
+          <div class="row align-items-center gx-0">
+            <div class="col-lg-5 col-md-6 col-sm-12 mb-3 text-start ps-0">
+              <img src="./images/Homebg1.png" alt="Hero Left" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 text-start">
+              <h2 class="hero-title">Innovation for education and Society</h2>
+              <p class="hero-description">
+                Our interdisciplinary majors and minors mean you can chart your own course for academic success
+              </p>
+              <button class="btn btn-primary">Visit our Campus</button>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 mb-3 text-end pe-0 mt-5">
+              <img src="./images/homebg.png" alt="Hero Right" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+      <span class="text-black fs-1 fw-bold">&lt;</span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+      <span class="text-black fs-1 fw-bold">&gt;</span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- form section  -->
+
+  <div class="form-container">
+    <select>
+      <option selected disabled>your destination ?</option>
+      <option>India</option>
+      <option>New York</option>
+    </select>
+
+    <input type="date" placeholder="Période de départ" />
+
+    <select>
+      <option selected disabled>Company</option>
+      <option>Air France</option>
+      <option>Delta</option>
+    </select>
+
+    <select>
+      <option selected disabled>Port of departure</option>
+      <option>Marseille</option>
+      <option>Lyon</option>
+    </select>
+
+    <button type="submit">Research</button>
+  </div>
+
+
+  <!-- ////////////////////////////////////////////////////////////////////// -->
+<!-- small container  -->
+
+<div class="grid-container" id="about">
+    <div class="grid-item engineering">
+      <img src="https://img.icons8.com/ios/50/000000/hard-hat.png" alt="Engineering">
+      <h3>Engineering</h3>
+    </div>
+    <div class="grid-item accounting">
+      <img src="https://img.icons8.com/ios/50/000000/combo-chart--v1.png" alt="Accounting">
+      <h3>Accounting</h3>
+    </div>
+    <div class="grid-item creative">
+      <img src="https://img.icons8.com/ios/50/000000/idea.png" alt="Creative">
+      <h3>Creative</h3>
+    </div>
+    <div class="grid-item design">
+      <img src="https://img.icons8.com/ios/50/000000/ruler.png" alt="Design">
+      <h3>Design</h3>
+    </div>
+    <div class="grid-item physics">
+      <img src="https://img.icons8.com/ios/50/000000/atom-editor.png" alt="Physics">
+      <h3>Physics</h3>
+    </div>
+    <div class="grid-item chemistry">
+      <img src="https://img.icons8.com/ios/50/000000/test-tube.png" alt="Chemistry">
+      <h3>Chemistry</h3>
+    </div>
+  </div>
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+   <!-- about section  -->
+
+
+   <div class="container" id="admmission">
+    <div class="row align-items-center mb-5  ">
+      
+      <!-- Left Column: Image -->
+      <div class="col-md-6 mb-4 mb-md-0 text-center mt-5">
+        <img src="./images/about.png" alt="About Image" class="img-fluid">
+      </div>
+  
+      <!-- Right Column: Text Content -->
+      <div class="col-md-6">
+        <h3 class="fw-bold mb-4" id="about-title">Limitless learning, more possibilities</h3>
+        <p class="text-muted">
+          The University of Rochester is one of the country's top-tier research universities. Our campuses are home to 200 academic majors, more than 2,000 faculty and instructional staff, and some 10,000 students—approximately half of whom are women.
+        </p>
+        <p class="text-muted">
+          Learning at the University of Rochester is also on a very personal scale. Rochester remains one of the smallest and most collegiate among top research universities, with smaller classes, a low 10:1 student-to-teacher ratio, and increased interactions with faculty.
+        </p>
+      </div>
+  
+    </div>
+  </div>
+
+
+<!-- pages section -->
+<section class="contact-section" id="pages">
+  <div class="bg-box">
+    <div class="text-content">
+      <h1>Start Your Courses</h1>
+      <h3>Are you ready to work faster?</h3>
+    </div>
+    <div class="image-content">
+      <img src="./images/Girl.png" alt="Girl Image">
+    </div>
+  </div>
+
+  <form class="contact-form">
+    <!-- <h2>Contact Us</h2> -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Your Name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="you@example.com" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <!-- news section  -->
+  <hr class="mt-5" />
+  <div class="container py-4 mt-5  " id="news">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="custom-box">
+          <h3>I am from France</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sit. Lorem,
+             ipsum dolor sit amet consectetur adipisicing elit. Culpa, quia.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="custom-box">
+          <h3>I am from France</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sit. Lorem,
+             ipsum dolor sit amet consectetur adipisicing elit. Culpa, quia.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="custom-box">
+          <h3>I am from France</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sit. Lorem,
+             ipsum dolor sit amet consectetur adipisicing elit. Culpa, quia.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="custom-box">
+          <h3>I am from France</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sit. Lorem,
+             ipsum dolor sit amet consectetur adipisicing elit. Culpa, quia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- footer section  -->
+
+<div class="container-fluid bg-dark text-white" id="contact">
+  <footer class="py-5">
+    <div class="container"> <!-- This limits the content width -->
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h2 class="text-white">LEARNED</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5 class="text-white">FEATURED PROGRAMS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Fixed Responsive</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">New Portfolio Grid</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Tested & Approved</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Fixed Google Map Issue</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5 class="text-white">LEARNING</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Our Plans</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Free Trial</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Academic Solution</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Business Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5 class="text-white">SUPPORT FORUM</h5>
+            <p class="text-white-50">Write your email into below field and join our quick support forum.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control bg-secondary border-0 text-white" placeholder="Email address">
+              <button class="btn btn-primary" type="button">HELP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top border-secondary">
+        <p class="mb-0">&copy; 2025 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div> <!-- End container -->
+  </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
