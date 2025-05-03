@@ -184,6 +184,23 @@ body {
       cursor: pointer;
     }
 
+     @media (max-width: 768px) {
+      .form-container {
+        flex-direction: column;
+        height: auto;
+        /* padding: 30px 20px; */
+        padding:  20px 30px;
+
+      }
+    
+      .form-container select,
+      .form-container input[type="date"],
+      .form-container button {
+        width: 100%;
+        max-width: 300px;
+      }
+    } 
+
     /* ///////////////////////////////////////////////// */
 
     /* about section  */
@@ -225,6 +242,13 @@ body {
   max-width: 1140px;
 }
 
+@media (max-width: 768px) {
+  #hrTag {
+    padding: 240px 0 0 0;
+
+  }
+
+}
 
 
 /* pages scrtion  */
@@ -417,3 +441,9 @@ body {
   color: #1e293b;
 }
 
+/* @media (max-width: 768px) {
+  .about-swiper{
+    padding: 0px 30px;
+  }
+
+} */
