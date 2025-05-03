@@ -10,6 +10,11 @@
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
   <link rel="stylesheet" href="./style.css" />
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
 
  
@@ -156,20 +161,45 @@
 
   <!-- ////////////////////////////////////////////////////////////////////// -->
 <!--  container  -->
+  <div class="swiper about-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide custom-slide engineering">
+        <img src="https://img.icons8.com/ios/50/000000/hard-hat.png" alt="Engineering">
+        <h3>Engineering</h3>
+      </div>
+      <div class="swiper-slide custom-slide accounting">
+        <img src="https://img.icons8.com/ios/50/000000/combo-chart--v1.png" alt="Accounting">
+        <h3>Accounting</h3>
+      </div>
+      <div class="swiper-slide custom-slide creative">
+        <img src="https://img.icons8.com/ios/50/000000/idea.png" alt="Creative">
+        <h3>Creative</h3>
+      </div>
+      <!--  -->
+      <div class="swiper-slide custom-slide engineering">
+        <img src="https://img.icons8.com/ios/50/000000/hard-hat.png" alt="Engineering">
+        <h3>Engineering</h3>
+      </div>
+      <div class="swiper-slide custom-slide accounting">
+        <img src="https://img.icons8.com/ios/50/000000/combo-chart--v1.png" alt="Accounting">
+        <h3>Accounting</h3>
+      </div>
+      <div class="swiper-slide custom-slide creative">
+        <img src="https://img.icons8.com/ios/50/000000/idea.png" alt="Creative">
+        <h3>Creative</h3>
+      </div>
+    
+      <!-- Add more slides if needed -->
+    </div>
+  
+    <!-- Navigation arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  
 
-<div class="grid-container" id="about">
-    <div class="grid-item engineering">
-      <img src="https://img.icons8.com/ios/50/000000/hard-hat.png" alt="Engineering">
-      <h3>Engineering</h3>
-    </div>
-    <div class="grid-item accounting">
-      <img src="https://img.icons8.com/ios/50/000000/combo-chart--v1.png" alt="Accounting">
-      <h3>Accounting</h3>
-    </div>
-    <div class="grid-item creative">
-      <img src="https://img.icons8.com/ios/50/000000/idea.png" alt="Creative">
-      <h3>Creative</h3>
-    </div>
+
+  <div class="grid-container">
     <div class="grid-item design">
       <img src="https://img.icons8.com/ios/50/000000/ruler.png" alt="Design">
       <h3>Design</h3>
@@ -183,6 +213,7 @@
       <h3>Chemistry</h3>
     </div>
   </div>
+
 
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -274,11 +305,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
 <!-- footer section  -->
 
 <div class="container-fluid bg-dark text-white" id="contact">
@@ -340,6 +366,27 @@
     </div> <!-- End container -->
   </footer>
 </div>
+<script>
+    new Swiper('.about-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 35,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      grabCursor: true,
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        },
+        900: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
